@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario Node</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main class="form_container">
+        <h1>Cadastro</h1>
+
+        <form action="/enviar" id="formCadastro">
+            <label for="nome">Nome:</label>
+            <input type="text" name="nome" id="nome" autocomplete="off" required>
+
+            <label for="email">Email:</label>
+            <input type="email" name="email" id="email" autocomplete="off" required>
+
+            <label for="idade">Idade:</label>
+            <input type="number" name="idade" autocomplete="off" id="idade" required>
+
+            <button type="submit">cadastrar-se</button>
+        </form>
+    </main>
+
+    <div id="mensagem">
+
+        <h2>Usuários Cadastrados</h2>
+
+        <table id="tabelaUsuarios">
+            <thead>
+                <tr>
+                    <th>Nome</th>
+                    <th>Email</th>
+                    <th>Idade</th>
+                </tr>
+            </thead>
+            <tbody></tbody>
+        </table>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
